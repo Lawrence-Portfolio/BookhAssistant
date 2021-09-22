@@ -1,0 +1,16 @@
+section#about-company {
+    .description {
+        p {
+            margin-bottom: 35px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.btn-wrap {
+    text-align: center;
+    .default-button {
+        min-width: 350px;
+    }
+}

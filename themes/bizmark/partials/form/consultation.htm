@@ -1,0 +1,24 @@
+<form class="px-40 pt-35 pb-45 flex flex-col text-center shadow border-1 border-darkWhite rounded-5 bg-white consultation-form">
+    <span class="font-semibold text-2xl mb-60">
+        Получить консультацию
+    </span>
+    <span class="text-sm mb-35">
+        Перезвоним в течение 15 минут
+    </span>
+    {% partial 'element/input'
+        type = 'tel'
+        placeholder = 'Введите номер телефона'
+        name = 'phone'
+        required = 'true'
+        class = "mb-40"
+    %}
+    {% partial 'element/button'
+        type = "submit"
+        text = "Заказать звонок"
+        class = 'mb-55'
+    %}
+    <span class="text-sm">
+        Отправляя заявку, вы даете согласие <br>
+        на обработку своих персональных данных
+    </span>
+</form>

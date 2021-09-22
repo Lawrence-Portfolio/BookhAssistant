@@ -1,0 +1,18 @@
+{% if type == 'radio' %}
+    <div>
+        <input
+            class=""
+            id="{{ id }}"
+            type="{{ type }}"
+            name="{{ name }}"
+            {{ required ? 'required' : '' }}>
+        <label for="{{ id }}"></label>
+    </div>
+{% else %}
+    <input
+        class="border-1 border-blue h-50 rounded-25 text-center outline-none text-grey placeholder-grey {{ class }}"
+        type="{{ type ? type : 'text' }}"
+        placeholder="{{ placeholder }}"
+        name="{{ name }}"
+        {{ required ? 'required' : '' }}>
+{% endif %}

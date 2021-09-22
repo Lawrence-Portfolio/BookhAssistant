@@ -1,0 +1,14 @@
+form#still-questions {
+    max-width: 620px;
+    margin: 0 auto;
+    background:
+        url("../../assets/img/svg/owl.svg"),
+        url("../../assets/img/svg/wave-form.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom, left top;
+    .social-link {
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+}

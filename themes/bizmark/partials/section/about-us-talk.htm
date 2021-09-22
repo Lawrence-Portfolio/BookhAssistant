@@ -1,0 +1,102 @@
+{% set brands = [
+    'assets/img/svg/brand-1.svg'|theme,
+    'assets/img/svg/brand-2.svg'|theme,
+    'assets/img/svg/brand-3.svg'|theme,
+    'assets/img/svg/brand-4.svg'|theme,
+    'assets/img/svg/brand-5.svg'|theme,
+    'assets/img/svg/brand-6.svg'|theme,
+    'assets/img/svg/brand-7.svg'|theme,
+    'assets/img/svg/brand-8.svg'|theme,
+    'assets/img/svg/brand-9.svg'|theme,
+    'assets/img/svg/brand-10.svg'|theme,
+    'assets/img/svg/brand-11.svg'|theme,
+    'assets/img/svg/brand-12.svg'|theme,
+] %}
+{% set video_id = '075h2pJsQt0' %}
+
+<section class="pt-60 pb-90" id="about-us-talk">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'О нас говорят'
+            tag = 'h2'
+        %}
+        <div class="content">
+            <div class="grid grid-cols-7 gap-x-30 mb-50">
+                <div class="col-span-4">
+                    <div class="bg-white px-25 pt-25 pb-40 shadow border-1 border-darkWhite rounded-5 description">
+                        <p class="leading-9">
+                            <b>Отзыв:</b> <i class="font-light">Сотрудничаем с компанией уже полгода, стою на бух обслуживании. Справляются со всеми своими обязанностями, очень доброжелательны, всегда готовы ответить на возникшие вопросы. Достаточно лояльные цены, все обосновано. Советую!
+                            Теперь только к вам. И жирный плюс - консультация совершенно бесплатно, хотя подобные организации уже давно бесплатно не консультируют. С наступающим вас праздником 8 марта, любви, счастья и благодарных клиентов.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-3">
+                    {# В data-video-id надо передавать id видеоролика с youtube #}
+                    {% partial 'element/video' video_id=video_id %}
+                </div>
+            </div>
+            <p class="pl-20 mb-65"><b>Клиент:</b>  Владислав Торговкин, исполнительный директор, Biz-Mark</p>
+            {% partial 'element/video-gallery' %}
+        </div>
+    </div>
+</section>
+<section class="pt-75 pb-90 bg-mint" id="brands">
+    <div class="container">
+        <div class="grid grid-cols-2 gap-x-30">
+            <div class="mt-15 mr-100">
+                <div class="grid grid-cols-3 gap-x-40 gap-y-60">
+                    {% for src in brands %}
+                    <div>
+                        <picture>
+                            <img src="{{ src }}" alt="">
+                        </picture>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div>
+                {% partial 'element/section_title'
+                    text = 'Больше 14 лет помогаем вести бизнес'
+                    tag = 'h2'
+                %}
+                <div class="mb-75 leading-9 description">
+                    <p>
+                        За время существования БухАссистент мы предоставили услуги более 80 компаниям различных сфер деятельности. При работе с клиентами мы учитываем особенности бизнеса, стратегические цели и имеющиеся ресурсы. Такая система сотрудничества позволяет достичь поставленной цели за кратчайшее время.
+                    </p>
+                    <p>
+                        Вопросы? Консультации? Сотрудничество? Мы всегда готовы
+                        проконсультировать и оказать квалифицированную помощь
+                        вашему бизнесу.
+                    </p>
+                </div>
+                {% partial 'element/button'
+                    href = '#'
+                    text = 'Примеры работы'
+                %}
+            </div>
+        </div>
+    </div>
+</section>
+<section class="py-100" id="our-statistics">
+    <div class="container">
+        <div class="grid grid-cols-4">
+            <div class="text-center">
+                <span class="mb-5 text-6xl font-extrabold">144</span>
+                <span>на ежемесячном ведении</span>
+            </div>
+            <div class="text-center">
+                <span class="mb-5 text-6xl font-extrabold">780</span>
+                <span>компаний нам доверились</span>
+            </div>
+            <div class="text-center">
+                <span class="mb-5 text-6xl font-extrabold">235</span>
+                <span>оформляем документов в месяц</span>
+            </div>
+            <div class="text-center">
+                <span class="mb-5 text-6xl font-extrabold">435 ₽</span>
+                <span>тысяч сэкономили клиентам</span>
+            </div>
+        </div>
+    </div>
+</section>
+

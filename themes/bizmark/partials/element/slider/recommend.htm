@@ -1,0 +1,26 @@
+
+
+<div class="relative" id="recommend-slider-wrap">
+    <div id="recommend-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for i in 1..10 %}
+                <div class="swiper-slide">
+                   <div class="slide-wrap">
+                       <a data-src="{{ 'assets/img/jpg/recommend-slide.jpg'|theme }}">
+                           <picture>
+                               <img class="w-full object-cover" src="{{ 'assets/img/jpg/recommend-slide.jpg'|theme }}" alt="">
+                           </picture>
+                       </a>
+                   </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% partial 'element/slider/control/navigation'
+        type = 'prev'
+    %}
+    {% partial 'element/slider/control/navigation'
+        type = 'next'
+    %}
+    {% partial 'element/slider/control/pagination' %}
+</div>

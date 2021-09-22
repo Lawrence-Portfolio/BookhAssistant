@@ -1,0 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+section#portfolio-card-hero .section-title{max-width:80%;text-align:left}section#portfolio-card-hero .list-work li{margin-bottom:10px}section#portfolio-card-hero .list-work li:last-child{margin-bottom:0}section#portfolio-card-hero .description p{margin-bottom:25px}section#portfolio-card-hero .description p:last-child{margin-bottom:0}section#portfolio-card-hero .description p b{font-weight:500}
+
+/*# sourceMappingURL=portfolio-card.css.map*/

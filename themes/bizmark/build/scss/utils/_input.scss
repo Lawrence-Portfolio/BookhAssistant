@@ -1,0 +1,25 @@
+.radio-control {
+    position: relative;
+    .input-control {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    .label-control {
+        &:after, &:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 42px;
+            height: 42px;
+        }
+        &:before {
+            background: linear-gradient($default);
+            border-radius: 50%;
+        }
+    }
+}

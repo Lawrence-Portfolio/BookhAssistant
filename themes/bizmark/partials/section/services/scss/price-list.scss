@@ -1,0 +1,26 @@
+section#price-list {
+    table {
+        tr {
+            border-bottom: 1px solid rgba(0, 169, 171, 0.28);
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: $darkWhite;
+                z-index: -1;
+                margin: 5px 0;
+            }
+            &:nth-child(odd) {
+                &:after {
+                    display: none;
+                }
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+}

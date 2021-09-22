@@ -1,0 +1,21 @@
+#last-works-slider-wrap {
+    .links-group {
+        display: flex;
+        padding: 0 65px;
+        padding: 0 65px;
+        a {
+            flex: 1;
+            &:first-child {
+                margin-right: 10px;
+            }
+        }
+    }
+    .slider-nav-button {
+        top: calc(100% - 55px)
+    }
+}
+.last-work-card {
+    b {
+        color: $otherBlack;
+    }
+}

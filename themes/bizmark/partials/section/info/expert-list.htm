@@ -1,0 +1,14 @@
+<section class="pb-100" id="{{ section_id }}">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = section_title
+        %}
+        <div class="grid grid-cols-4 gap-30">
+            {% for i in 1..expert_count %}
+            <div>
+                {% partial 'expert/card' %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

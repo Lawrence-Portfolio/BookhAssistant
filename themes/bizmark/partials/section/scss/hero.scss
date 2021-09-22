@@ -1,0 +1,15 @@
+#hero {
+    padding-bottom: 100px;
+    background-color: #F8FFFB;
+    .person-wrap {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 35px;
+        .person-description {
+            max-width: 360px;
+        }
+    }
+}

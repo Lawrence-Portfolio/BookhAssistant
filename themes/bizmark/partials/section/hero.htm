@@ -1,0 +1,55 @@
+<section class="pt-35" id="hero">
+    <div class="container">
+        <div class="grid grid-cols-2 border-1 border-darkWhite shadow rounded-5 hero-content">
+            <div class="flex flex-col justify-between items-start h-full pl-30 pb-55 pt-45">
+                <div>
+                    <h1 class="block text-4xl text-otherBlack mb-40">Бухгалтерский <br> и юридический аутсорсинг</h1>
+                    <p class="w-10/12 mb-80">
+                        Решим юридические вопросы Решим юридические вопросы Решим юридические вопросы
+                    </p>
+                    <div class="grid grid-cols-2 grid-rows-2 gap-x-20 gap-y-40">
+                        <div class="flex">
+                            <picture class="mr-20">
+                                <img src="{{ 'assets/img/svg/hero-1.svg'|theme }}" alt="">
+                            </picture>
+                            <span>Освободим <br> от бумажной работы</span>
+                        </div>
+                        <div class="flex">
+                            <picture class="mr-20">
+                                <img src="{{ 'assets/img/svg/hero-2.svg'|theme }}" alt="">
+                            </picture>
+                            <span>Решим <br> юридические вопросы</span>
+                        </div>
+                        <div class="flex">
+                            <picture class="mr-20">
+                                <img src="{{ 'assets/img/svg/hero-3.svg'|theme }}" alt="">
+                            </picture>
+                            <span>Защитим <br> при наголовой проверке</span>
+                        </div>
+                        <div class="flex">
+                            <picture class="mr-20">
+                                <img src="{{ 'assets/img/svg/hero-4.svg'|theme }}" alt="">
+                            </picture>
+                            <span>Сдадим <br> отчетность в срок</span>
+                        </div>
+                    </div>
+                </div>
+                {% partial 'element/button'
+                    href = '#'
+                    text = 'Получить презентацию компании'
+                %}
+            </div>
+            <div class="relative ml-20">
+                <picture>
+                    <img class="w-full object-contain" src="{{ 'assets/img/jpg/hero-image.jpg'|theme }}" alt="Надежда Николаева">
+                </picture>
+                <div class="person-wrap">
+                    <div class="flex flex-col bg-white bg-opacity-90 p-20 mx-40 person-description">
+                        <span class="font-semibold text-2xl mb-10">Надежда Николаева</span>
+                        <span>Руководитель компании БухАссисент</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

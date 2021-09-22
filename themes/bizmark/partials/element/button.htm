@@ -1,0 +1,12 @@
+{% if href %}
+    <a
+        class="inline-flex items-center justify-center bg-gradient-to-r from-green to-blue text-white text-sm rounded-30 px-25 h-55 default-button {{ class }}"
+        href="{{ href }}"
+        {{ download ? 'download' : '' }}>
+        <span class="relative">{{ text }}</span>
+    </a>
+{% else %}
+    <button type="{{ type ? type : 'button' }}" class="inline-flex items-center justify-center bg-gradient-to-r from-green to-blue text-white text-sm rounded-30 px-25 h-55 default-button {{ class }}">
+        <span class="relative">{{ text }}</span>
+    </button>
+{% endif %}

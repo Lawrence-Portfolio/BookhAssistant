@@ -1,0 +1,42 @@
+<form id="still-questions" class="relative px-20 py-40 shadow border-1 border-darkWhite">
+    <div class="grid grid-rows-1 grid-cols-7 gap-x-10 mb-40">
+        <div class="col-span-4">
+            {% partial 'element/input'
+                type = 'tel'
+                placeholder = 'Введите номер телефона'
+                class = 'w-full'
+                name = 'phone'
+                required = 'true'
+            %}
+        </div>
+        <div class="col-span-3">
+            {% partial 'element/button'
+                type = 'submit'
+                text = 'Заказать звонок'
+                class = 'w-full'
+            %}
+        </div>
+    </div>
+    <span class="text-lightGrey text-sm mb-30">
+        Отправляя заявку, вы даете согласие на обработку своих <br>
+        персональных данных
+    </span>
+    <span class="mb-25">или напишите нам в мессенджер</span>
+    <div class="flex">
+        <a class="transition mr-20 social-link" href="">
+            <picture>
+                <img src="{{ 'assets/img/svg/viber-btn.svg'|theme }}" alt="Viber">
+            </picture>
+        </a>
+        <a class="transition mr-20 social-link" href="">
+            <picture>
+                <img src="{{ 'assets/img/svg/whats-app-btn.svg'|theme }}" alt="WhatsApp">
+            </picture>
+        </a>
+        <a class="transition social-link" href="">
+            <picture>
+                <img src="{{ 'assets/img/svg/telegram-btn.svg'|theme }}" alt="Telegram">
+            </picture>
+        </a>
+    </div>
+</form>

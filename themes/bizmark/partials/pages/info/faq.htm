@@ -1,0 +1,23 @@
+<section id="faq">
+    <div class="container">
+        <div class="shadow border-1 border-darkWhite px-30 pt-50 pb-55" accordion-container>
+            {% for i in 1..8 %}
+                <div class="mb-30 ac">
+                    <h2 class="ac-header">
+                        <button class="pb-25 w-full flex items-center justify-between text-left text-lg font-medium ac-trigger">
+                            У меня есть свой бухгалтер/юрист, с которым мы не хотим расставаться.
+                            <picture class="ml-80 flex justify-center items-center border-1 border-lightBlue rounded-circle min-w-30 min-h-30 icon">
+                                <img src="{{ 'assets/img/svg/icons/angle-down.svg'|theme }}" alt="">
+                            </picture>
+                        </button>
+                    </h2>
+                    <div class="overflow-hidden ac-panel">
+                        <p class="ac-text py-30 px-20 italic text-otherBlack">
+                            Конечно, такой формат широко применяется в практике.  Наши специалисты с легкостью возьмут часть нагрузки на себя, выполняя определенные задачи, что поможет Вашему сотруднику без «лишнего груза» справляться со своими обязанностями. Также, наша компания может предложить кураторство – данный способ означает своего рода консультационную и практическую помощь Вашему сотруднику (помочь сделать отчет, консультация о правильности заполнения и т.д.). Такой вариант отлично подходит для тех, кто заинтересован в повышении практических навыков сотрудников и не хочет с ними расставаться.
+                        </p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,28 @@
+description = "Динамический шаблон"
+==
+function onStart() {
+    $this->addCss(mix('css/tailwind.css', 'themes/bizmark/assets'));
+    $this->addCss(mix('css/common.css', 'themes/bizmark/assets'));
+    $this->addJs(mix('js/common.js', 'themes/bizmark/assets'));
+}
+==
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{ this.page.title }}</title>
+    {% styles %}
+</head>
+<body>
+    <div class="page">
+        {% partial 'section/top-strip' %}
+        {% partial 'header/header' %}
+        {% page %}
+        {% partial 'footer/footer' %}
+        {% partial 'section/bottom-strip' %}
+        {% placeholder modals %}
+    </div>
+    {% scripts %}
+</body>
+</html>

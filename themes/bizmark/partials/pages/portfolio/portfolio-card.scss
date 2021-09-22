@@ -1,0 +1,32 @@
+// Variables:
+    @import "../../../build/scss/variables";
+
+// Roboto Font:
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+section#portfolio-card-hero {
+    .section-title {
+        text-align: left;
+        max-width: 80%;
+    }
+    .list-work {
+        li {
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .description {
+        p {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            b {
+                font-weight: 500;
+            }
+        }
+    }
+}

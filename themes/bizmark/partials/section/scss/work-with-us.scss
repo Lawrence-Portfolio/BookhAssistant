@@ -1,0 +1,27 @@
+section#work-with-us {
+    background-color: #F8FFFB;
+    background-image: url("../../assets/img/svg/work-with-us-bg.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.work-with-us-card {
+    picture {
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: #FFFFFF;
+            z-index: 0;
+            margin: 2px;
+            border-radius: 50%;
+        }
+        img {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}

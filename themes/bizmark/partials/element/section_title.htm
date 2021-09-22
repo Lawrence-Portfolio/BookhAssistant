@@ -1,0 +1,16 @@
+{% if tag == 'h1' %}
+    <h1 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h1>
+{% elseif tag == 'h2' %}
+    <h2 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h2>
+{% elseif tag == 'h3' %}
+    <h3 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h3>
+{% elseif tag == 'h4' %}
+    <h4 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h4>
+{% elseif tag == 'h5' %}
+    <h5 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h5>
+{% elseif tag == 'h6' %}
+    <h6 class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</h6>
+{% else %}
+    <span class="block text-center text-5xl text-center text-otherBlack font-bold mb-80 section-title">{{ text|raw }}</span>
+{% endif %}
+

@@ -1,0 +1,10 @@
+#history-company {
+    .description {
+        p {
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

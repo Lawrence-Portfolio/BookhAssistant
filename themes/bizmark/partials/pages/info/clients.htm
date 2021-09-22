@@ -1,0 +1,28 @@
+{% set clients = [
+    'assets/img/svg/client-1.svg'|theme,
+    'assets/img/svg/client-2.svg'|theme,
+    'assets/img/svg/client-3.svg'|theme,
+    'assets/img/svg/client-4.svg'|theme,
+    'assets/img/svg/client-5.svg'|theme,
+    'assets/img/svg/client-6.svg'|theme,
+    'assets/img/svg/client-7.svg'|theme,
+    'assets/img/svg/client-8.svg'|theme,
+    'assets/img/svg/client-9.svg'|theme,
+    'assets/img/svg/client-10.svg'|theme,
+    'assets/img/svg/client-11.svg'|theme,
+    'assets/img/svg/client-12.svg'|theme
+] %}
+
+<section class="pb-105" id="clients">
+    <div class="container">
+        <div class="grid grid-cols-4 gap-x-30 gap-y-100">
+            {% for item in clients %}
+            <div class="flex-1 flex items-center">
+                <picture>
+                    <img src="{{ item }}" alt="">
+                </picture>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

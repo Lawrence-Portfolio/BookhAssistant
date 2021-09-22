@@ -1,0 +1,91 @@
+<section class="pt-70 pb-90" id="work-with-us">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Работая с нами, вы получите'
+            tag = 'h2'
+        %}
+        <div class="grid grid-cols-5 gap-x-30 content">
+            <div class="col-span-3 pr-60">
+                <div class="grid grid-cols-2 gap-y-30 gap-x-45 pt-30">
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-1.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Конфиденциальность информации
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-2.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Снижение затрат
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-3.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Безопасное снижение налогов
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-4.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Ведение зарплатного проекта
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-5.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Возмещение НДС
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-6.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Восстановление бухучета
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-7.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Разблокировку счетов
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-8.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Защиту перед интересов ИФНС
+                        </span>
+                    </div>
+                    <div class="flex items-center work-with-us-card">
+                        <picture class="relative mr-30 flex justify-center items-center min-w-65 h-65 bg-gradient-to-r from-green to-blue rounded-circle">
+                            <img src="{{ 'assets/img/svg/work-with-us-9.svg'|theme }}">
+                        </picture>
+                        <span>
+                            Финансовую ответственность
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-2">
+                {% partial 'form/feedback'
+                    type = 'submit'
+                %}
+            </div>
+        </div>
+    </div>
+</section>

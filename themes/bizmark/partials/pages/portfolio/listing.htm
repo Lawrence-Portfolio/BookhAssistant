@@ -1,0 +1,97 @@
+<section class="pb-100" id="examples-our-work">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Примеры нашей работы'
+            tag = 'h1'
+        %}
+        <div class="grid grid-cols-4 shadow border-1 border-darkWhite pt-65 pb-75 mb-110">
+            <div class="flex flex-col items-center text-center text-otherBlack">
+                <picture class="mb-45">
+                    <img src="{{ 'assets/img/svg/example-our-work-1.svg'|theme }}">
+                </picture>
+                <span class="text-7xl font-black mb-15">168</span>
+                <span>работ в портфолио</span>
+            </div>
+            <div class="flex flex-col items-center text-center text-otherBlack">
+                <picture class="mb-45">
+                    <img src="{{ 'assets/img/svg/example-our-work-2.svg'|theme }}">
+                </picture>
+                <span class="text-7xl font-black mb-15">16</span>
+                <span>сфер деятельности</span>
+            </div>
+            <div class="flex flex-col items-center text-center text-otherBlack">
+                <picture class="mb-45">
+                    <img src="{{ 'assets/img/svg/example-our-work-3.svg'|theme }}">
+                </picture>
+                <span class="text-7xl font-black mb-15">7</span>
+                <span>городов России</span>
+            </div>
+            <div class="flex flex-col items-center text-center text-otherBlack">
+                <picture class="mb-45">
+                    <img src="{{ 'assets/img/svg/example-our-work-4.svg'|theme }}">
+                </picture>
+                <span class="text-7xl font-black mb-15">~17</span>
+                <span>кейсов у сотрудника</span>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="grid grid-cols-2 mb-55">
+                <a class="flex items-center text-3xl text-otherBlack font-extrabold category-filter-link active" href="#">
+                    <pictrie class="relative mr-20 flex items-center justify-center bg-gradient-to-r from-green to-blue icon rounded-circle">
+                        <img src="{{ 'assets/img/svg/icons/eye.svg'|theme }}" alt="">
+                    </pictrie>
+                    Кейсы по бухгалтерии
+                </a>
+                <a class="flex items-center text-3xl text-otherBlack font-extrabold category-filter-link" href="#">
+                    <pictrie class="relative mr-20 flex items-center justify-center bg-gradient-to-r from-green to-blue icon rounded-circle">
+                        <img src="{{ 'assets/img/svg/icons/eye.svg'|theme }}" alt="">
+                    </pictrie>
+                    Кейсы по юриспруденции
+                </a>
+            </div>
+            <div class="mb-70">
+                <div class="flex flex-wrap -m-15/2">
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link active">Все кейсы</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Розничная торговля</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Сельское хозяйство</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Дистербьютер</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Промышленость</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Общепит</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Медицина</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Салоны красоты</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">IT-компании</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Образовательные компании</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Образовательные компании</a>
+                    </div>
+                    <div class="p-15/2">
+                        <a href="#" class="inline-block rounded-30 border-1 border-green px-15 py-5 hover:underline filter-link">Компании услуг</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% partial 'portfolio/listing' %}
+        {% partial 'element/load-more' %}
+        {% partial 'element/pagination' %}
+    </div>
+</section>

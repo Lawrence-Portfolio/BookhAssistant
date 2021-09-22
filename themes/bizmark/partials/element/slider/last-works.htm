@@ -1,0 +1,47 @@
+<div class="relative" id="last-works-slider-wrap">
+    <div id="last-works-slider" class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for i in 1..10 %}
+                <div class="swiper-slide">
+                    <div class="slide-wrap">
+                        <div class="last-work-card">
+                            <span class="mb-60 text-4xl font-bold">
+                                Аутсорсинг функции
+                                расчета заработной платы
+                                для веб-студии
+                            </span>
+                            <div class="grid grid-cols-3 gap-x-25 mb-45">
+                                <span><b>Клиент:</b> Biz-Mark</span>
+                                <span><b>География:</b> Москва</span>
+                                <span><b>Отрасль:</b> Веб-студия</span>
+                            </div>
+                            <span class="mb-30"><b>Список работ:</b> Аутсорсинг функции расчета заработной платы.</span>
+                            <span class="mb-45">
+                                <b>Краткое описание:</b> Построили аутсорсинг расчета заработной платы
+                                для веб-студии в Москве, на 123 сотрудника.
+                            </span>
+                            <div class="links-group">
+                                {% partial 'element/button'
+                                    href = '#'
+                                    text = 'Подробнее о проекте'
+                                %}
+                                {% partial 'element/button'
+                                    href = '#'
+                                    text = 'Все проекты'
+                                %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="bottom-controls">
+        {% partial 'element/slider/control/navigation'
+            type = 'prev'
+        %}
+        {% partial 'element/slider/control/navigation'
+            type = 'next'
+        %}
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<section class="pb-70" id="experts-project">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Специалисты для вашего проекта'
+            tag = 'h2'
+        %}
+        <div class="grid grid-cols-4 gap-30">
+            {% for i in 1..4 %}
+                {% partial 'expert/card' %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

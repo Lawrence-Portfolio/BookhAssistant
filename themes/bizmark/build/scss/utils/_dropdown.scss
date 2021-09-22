@@ -1,0 +1,29 @@
+[dropdown] {
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        [dropdown-list] {
+            display: block;
+        }
+    }
+    [dropdown-list] {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3);
+        &.show {
+            display: block;
+        }
+    }
+    a {
+        position: relative;
+        &:after {
+            content: '';
+            width: 3px;
+            height: 3px;
+            background-image: url("../../../assets/img/svg/icons/angle-down.svg");
+        }
+    }
+}

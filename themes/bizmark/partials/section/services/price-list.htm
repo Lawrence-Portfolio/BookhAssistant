@@ -1,0 +1,20 @@
+<section class="pb-40 pt-55" id="price-list">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Прайс-лист на бухгалтерские услуги'
+            tag = 'h2'
+        %}
+        <div class="pt-45 px-35 pb-30 shadow border-1 border-darkWhite">
+            <table class="w-full">
+                <tbody>
+                    {% for i in 1..9 %}
+                    <tr class="relative">
+                        <td class="pl-15 py-10">Консультация 30 минут (выбор налогообложения; минимизация расходов)</td>
+                        <td class="py-10">1 000,00 ₽</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

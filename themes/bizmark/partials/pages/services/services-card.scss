@@ -1,0 +1,25 @@
+// Variables:
+    @import "../../../build/scss/variables";
+
+// Section:
+    @import '../../section/scss/hero';
+    @import '../../section/scss/recommend';
+    @import '../../section/scss/last-works';
+    @import "../../section/scss/about-us";
+    @import "../../section/services/scss/more-about";
+    @import "../../section/services/scss/price-list";
+    @import "../../section/services/scss/ordering-from-us";
+
+// Form:
+    @import "../../form/scss/still-questions";
+
+// Slider:
+    @import '../../element/slider/scss/recommend';
+    @import '../../element/slider/scss/last-works';
+
+section#hero {
+    padding-top: 0;
+}
+section#breadcrumbs {
+    background-color: #F8FFFB;
+}

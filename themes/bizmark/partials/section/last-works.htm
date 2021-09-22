@@ -1,0 +1,46 @@
+<section class="pb-85" id="last-works">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Последние работы'
+            tag = 'h2'
+        %}
+        <div class="grid grid-cols-5 gap-x-30">
+            <div class="col-span-3">
+                <div class="h-full shadow border-1 border-darkWhite rounded-5 px-60 pt-45 pb-55">
+                    {% partial 'element/slider/last-works' %}
+                </div>
+            </div>
+            <div class="col-span-2">
+                <div class="h-full px-70 pt-55 pb-45 flex flex-col justify-between border-1 border-darkWhite shadow rounded-5 statistics">
+                    <div class="mb-60 flex justify-center items-center">
+                        <picture class="block mr-40">
+                            <img src="{{ 'assets/img/svg/works-1.svg'|theme }}" alt="">
+                        </picture>
+                        <div class="text-center">
+                            <span class="text-7xl font-black text-otherBlack block">168</span>
+                            <span>работ в портфолио</span>
+                        </div>
+                    </div>
+                    <div class="mb-60 flex justify-center items-center">
+                        <picture class="block mr-40">
+                            <img src="{{ 'assets/img/svg/works-2.svg'|theme }}" alt="">
+                        </picture>
+                        <div class="text-center">
+                            <span class="text-7xl font-black text-otherBlack block">16</span>
+                            <span>сфер деятельности</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <picture class="block mr-40">
+                            <img src="{{ 'assets/img/svg/works-3.svg'|theme }}" alt="">
+                        </picture>
+                        <div class="text-center">
+                            <span class="text-7xl font-black text-otherBlack block">7</span>
+                            <span>городов России</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+{% set technologies = [
+    {
+        title: 'Актион: Главбух',
+        imgSrc: 'assets/img/svg/technologies-1.svg'|theme
+    },
+    {
+        title: 'Актион: Юрист',
+        imgSrc: 'assets/img/svg/technologies-1.svg'|theme
+    },
+    {
+        title: 'Актион: Проверка контрагентов',
+        imgSrc: 'assets/img/svg/technologies-1.svg'|theme
+    },
+    {
+        title: 'Консультант Плюс',
+        imgSrc: 'assets/img/svg/technologies-2.svg'|theme
+    },
+    {
+        title: 'СБИС',
+        imgSrc: 'assets/img/svg/technologies-3.svg'|theme
+    },
+    {
+        title: 'Контур',
+        imgSrc: 'assets/img/svg/technologies-4.svg'|theme
+    },
+    {
+        title: 'Система 1С',
+        imgSrc: 'assets/img/svg/technologies-5.svg'|theme
+    }
+] %}
+
+<section class="pb-105" id="technologies">
+    <div class="container">
+        <div class="grid grid-cols-3 gap-x-30 gap-y-80">
+            {% for item in technologies %}
+            <div class="flex flex-col justify-between">
+                <picture class="flex-1 flex items-end mb-50">
+                    <img src="{{ item.imgSrc }}" alt="">
+                </picture>
+                <span>{{ item.title }}</span>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,17 @@
+<section class="py-20" id="breadcrumbs">
+    <div class="container">
+        <nav class="breadcrumbs">
+            <ul class="flex text-sm">
+                <li>
+                    <a href="/">Главная</a>
+                </li>
+                {% for link in links %}
+                    <li>
+                        <a href="{{ link.href }}">{{ link.title }}</a>
+                    </li>
+                {% endfor %}
+                <li class="font-medium">{{ this.page.title }}</li>
+            </ul>
+        </nav>
+    </div>
+</section>

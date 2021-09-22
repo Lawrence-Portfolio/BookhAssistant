@@ -1,0 +1,11 @@
+title = "Страница услуги"
+url = "/services/card"
+layout = "default"
+==
+function onStart() {
+    $this->addCss(mix('css/services-card.css', 'themes/bizmark/assets'));
+    $this->addJs(mix('js/services-card.js', 'themes/bizmark/assets'));
+}
+==
+{% partial 'element/breadcrumbs' %}
+{% partial 'pages/services/card' %}

@@ -1,0 +1,22 @@
+<section class="pb-40" id="licenses-and-certificates">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Лицензии и сертификаты'
+        %}
+        <div class="grid grid-cols-4 gap-30 mb-115" picture-gallery>
+            {% for i in 1..8 %}
+                <a class="cursor-pointer" data-src="{{ 'assets/img/jpg/licenses-and-certificates.jpg'|theme }}">
+                    <picture class="block shadow">
+                        <img class="w-full" src="{{ 'assets/img/jpg/licenses-and-certificates.jpg'|theme }}" alt="">
+                    </picture>
+                </a>
+            {% endfor %}
+        </div>
+        <div class="btn-wrap">
+            {% partial 'element/button'
+                href = '#'
+                text = 'Все сертификаты и лицензии'
+            %}
+        </div>
+    </div>
+</section>

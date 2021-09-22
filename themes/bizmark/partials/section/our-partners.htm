@@ -1,0 +1,33 @@
+{% set our_partners_array = [
+    'assets/img/svg/partner-1.svg'|theme,
+    'assets/img/svg/partner-2.svg'|theme,
+    'assets/img/svg/partner-3.svg'|theme,
+    'assets/img/svg/partner-4.svg'|theme,
+    'assets/img/svg/partner-5.svg'|theme,
+    'assets/img/svg/partner-6.svg'|theme,
+    'assets/img/svg/partner-7.svg'|theme,
+    'assets/img/svg/partner-8.svg'|theme,
+    'assets/img/svg/partner-9.svg'|theme,
+    'assets/img/svg/partner-10.svg'|theme,
+    'assets/img/svg/partner-11.svg'|theme,
+    'assets/img/svg/partner-12.svg'|theme,
+    'assets/img/svg/partner-13.svg'|theme
+] %}
+
+<section class="pt-75 pb-40" id="our-partners">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Наши партнеры'
+            tag = 'h2'
+        %}
+        <div class="flex flex-wrap justify-center items-center -mr-15">
+            {% for src in our_partners_array %}
+            <div class="w-1/4 p-15">
+                <pciture>
+                    <img src="{{ src }}" alt="">
+                </pciture>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

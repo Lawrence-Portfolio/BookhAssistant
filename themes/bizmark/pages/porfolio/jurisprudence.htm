@@ -1,0 +1,10 @@
+title = "Дело об отказе во взыскании неосновательного обогащения"
+url = "/portfolio/jurisprudence"
+layout = "default"
+==
+function onStart() {
+    $this->addCss(mix('css/portfolio-card.css', 'themes/bizmark/assets'));
+}
+==
+{% partial 'element/breadcrumbs' %}
+{% partial 'pages/portfolio/card' page = 'jurisprudence' %}

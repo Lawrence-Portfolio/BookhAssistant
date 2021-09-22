@@ -1,0 +1,59 @@
+<section class="bg-mint pt-75 pb-85" id="about-us">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Кратко о нас'
+            tag = 'h2'
+        %}
+        <div class="grid grid-cols-2 gap-x-30">
+            <div class="mr-20">
+                <div class="mb-65 leading-9 description">
+                    <p>
+                        Наша компания существует на рынке с 2008г.
+                        Дружная команда, квалифицированные специалисты и доброжелательное отношение- всегда к Вашим услугам!
+                        Мы готовы доступно пояснить сложные вопросы, связанные с ведением бухгалтерского учета и налогообложения. Консультация грамотного бухгалтера всегда поможет понять, как правильно оптимизировать и минимизировать налоговое бремя.
+                        Так же, для начинающих предпринимателей мы готовы предоставить расчет наиболее выгодной схемы работы в той или иной сфере деятельности.
+                    </p>
+                    <p>
+                        Сотрудничая с нами, Вы будете уверены в том, что Ваша налоговая и бухгалтерская отчетность всегда подается вовремя и так же сможете экономить на содержании штата бухгалтерии и организации рабочих мест.
+                    </p>
+                </div>
+                {% partial 'element/button'
+                    href = '#'
+                    text = 'Подробнее о компании'
+                %}
+            </div>
+            <div>
+                {% if statistics %}
+                    <div class="grid grid-cols-4 grid-rows-2 gap-y-120">
+                        <div class="text-center col-span-2">
+                            <span class="mb-5 text-6xl font-extrabold">144</span>
+                            <span>на ежемесячном ведении</span>
+                        </div>
+                        <div class="text-center col-span-2">
+                            <span class="mb-5 text-6xl font-extrabold">780</span>
+                            <span>компаний нам доверились</span>
+                        </div>
+                        <div class="text-center col-span-2">
+                            <span class="mb-5 text-6xl font-extrabold">235</span>
+                            <span>оформляем документов в месяц</span>
+                        </div>
+                        <div class="text-center col-span-2">
+                            <span class="mb-5 text-6xl font-extrabold">435 ₽</span>
+                            <span>тысяч сэкономили клиентам</span>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="grid grid-cols-3 gap-30">
+                        {% for i in 1..8 %}
+                        <div>
+                            <picture>
+                                <img src="{{ 'assets/img/jpg/about-us-person.jpg'|theme }}" alt="">
+                            </picture>
+                        </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>

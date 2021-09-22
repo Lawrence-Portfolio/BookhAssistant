@@ -1,0 +1,51 @@
+// Variables:
+    @import "../../../build/scss/variables";
+
+// Roboto Font:
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// Element:
+    @import '../../../partials/element/scss/pagination';
+
+.portfolio-card{
+    font-family: 'Roboto', sans-serif;
+}
+.load-more-wrap {
+    button {
+        min-width: 220px;
+    }
+}
+
+.filter {
+    .category-filter-link {
+        .icon {
+            width: 42px;
+            height: 42px;
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-color: #fff;
+                border-radius: 50%;
+                margin: 3px;
+                transition: all 150ms ease-in-out;
+            }
+        }
+        &.active {
+            text-decoration: underline;
+            .icon {
+                &:before {
+                    opacity: 0;
+                }
+            }
+        }
+    }
+    .filter-link {
+        &.active {
+            text-decoration: underline;
+        }
+    }
+}

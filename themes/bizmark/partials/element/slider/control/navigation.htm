@@ -1,0 +1,13 @@
+{% if type == 'next' %}
+    <div class="slider-nav-button next-slide-button z-10">
+        <div class="w-55 h-55 relative flex items-center justify-center rounded-circle bg-gradient-to-r from-blue to-green cursor-pointer slider-nav-button-icon"></div>
+    </div>
+{% elseif type == 'prev' %}
+    <div class="slider-nav-button prev-slide-button z-10">
+        <div class="w-55 h-55 relative flex items-center justify-center rounded-circle bg-gradient-to-r from-blue to-green cursor-pointer slider-nav-button-icon"></div>
+    </div>
+{% else %}
+    <div class="slider-nav-button prev-slide-button z-10">
+        <div class="w-55 h-55 relative flex items-center justify-center rounded-circle bg-gradient-to-r from-blue to-green cursor-pointer slider-nav-button-icon"></div>
+    </div>
+{% endif %}

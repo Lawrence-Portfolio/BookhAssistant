@@ -1,0 +1,215 @@
+<section class="pt-30" id="portfolio-card-hero">
+    <div class="container">
+        {% if page == 'bookkeeping' %}
+            {% partial 'element/section_title'
+                text = this.page.title
+                tag = 'h1'
+            %}
+            <div class="flex justify-between mb-95">
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img src="{{ 'assets/img/svg/icons/clock.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Срок работы:</span> <b>01.02.2019 - по н.в.</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img width="22" src="{{ 'assets/img/svg/icons/calendar.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Клиент:</span> <b>Biz-Mark</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img src="{{ 'assets/img/svg/icons/globe-2.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>География:</span> <b>Москва</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img width="18" src="{{ 'assets/img/svg/icons/settings.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Отрасль:</span> <b>IT компании</b>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="grid grid-cols-12 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Краткое описание</span>
+                    </div>
+                    <div class="col-span-9">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115">
+                            <div class="mr-70 description">
+                                <p>Построили аутсорсинг расчета заработной платы для веб-студии в Москве, на 123 сотрудника.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-x-30 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Список работ</span>
+                    </div>
+                    <div class="col-span-9">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115">
+                            <ul class="list-disc pl-17 list-work">
+                                <li>Аутсорсинг функции расчета заработной платы;</li>
+                                <li>Ведение бухгелтерии.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-x-30 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Отзыв клиента</span>
+                    </div>
+                    <div class="col-span-9 client-review">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115 flex">
+                            <div class="w-4/6 pr-40 description">
+                                <p>«Выражаю огромную благодарсность компании ООО «БухАссистент»!</p>
+                                <p>Сотрудники компании настоящие специалисты, помогли решить все проблемы с бухгалтерским учетом и ведением заработной платы.</p>
+                                <p>Могу смело рекомендовать специалистов ООО «БухАссистент» и надеюсь на дальнейшее сотрудничество...»</p>
+                                <p><b>Марк Бунин</b>, генеральный директор</p>
+                            </div>
+                            <picture>
+                                <img class="w-full" src="{{ 'assets/img/png/letter.png'|theme }}" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% else %}
+            {% partial 'element/section_title'
+                text = this.page.title
+                tag = 'h1'
+            %}
+            <div class="flex justify-between mb-95">
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img src="{{ 'assets/img/svg/icons/clock.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Срок работы:</span> <b>01.02.2019 - по н.в.</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img width="22" src="{{ 'assets/img/svg/icons/calendar.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Клиент:</span> <b>Biz-Mark</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img src="{{ 'assets/img/svg/icons/globe-2.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>География:</span> <b>Москва</b>
+                    </span>
+                </div>
+                <div class="flex items-center">
+                    <picture class="mr-10">
+                        <img width="18" src="{{ 'assets/img/svg/icons/settings.svg'|theme }}" alt="">
+                    </picture>
+                    <span class="font-medium">
+                        <span>Отрасль:</span> <b>IT компании</b>
+                    </span>
+                </div>
+            </div>
+            <div>
+                <div class="grid grid-cols-12 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Краткое описание</span>
+                    </div>
+                    <div class="col-span-9">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115">
+                            <div class="mr-70 description">
+                                <p>
+                                    Клиентка обратился в компанию для решения вопроса по предъявленному к ней иску о взыскании неосновательного обогащения.
+                                </p>
+                                <p>
+                                    В период сожительства клиентка и ее избранник приобрели грузовой автомобиль для использования его и сдачи в аренду, осуществления перевозок грузов. Денежные средства на приобретение автомобиля были предоставлены клиенткой, а оформлением приобретения автомобиля в форме договора купли-продажи, регистрации автомобиля в органах ГАИ осуществлялась гражданским супругом. После расставания бывший избранник подал заявление в суд о взыскании 1,5 млн. рублей с клиентки в качестве неосновательного обогащения.
+
+                                </p>
+                                <p>
+                                    Позиция истца основывалась на документах, подтверждающих его участие в оформлении сделки купли-продажи грузового автомобиля, внесении именно им денежных средств в кассу продавца автомобиля после продажи собственной однокомнатной квартиры на окраине Подмосковья.
+
+                                </p>
+                                <p>
+                                    Сотрудниками юридического бюро были подготовлены возражения на исковое заявление.
+                                    В ходе судебного процесса представителем клиентки были предоставлены документы подтверждающие наличие денежных средств именно у неё на приобретение спорного автомобиля, совершение действий истцом при наличии полномочий от клиентки, недоказанность внесения денежных средств истцом на приобретение автомобиля именно от продажи им своего жилья, недостаточности данной суммы для покупки. В судебном заседании были допрошены свидетели, подтверждающие данный факт. Был доказан факт пропуска истцом срока исковой давности, несмотря на многочисленные контрдоводы двух представителей истца.
+
+                                </p>
+                                <p>
+                                    В результате решения Чеховского городского суда Московской области в удовлетворении исковых требований, предъявленных к клиентке, было отказано с учетом всех доводов сотрудника юридического бюро – представителя клиентки.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="ml-75 pl-35 pt-20 pr-50 min-h-115">
+                            <span class="text-lg font-semibold mb-35">Документы дела:</span>
+                            <div class="grid grid-cols-4 gap-30">
+                                {% for i in 1..4 %}
+                                    <picture class="shadow">
+                                        <img src="{{ 'assets/img/jpg/document.jpg'|theme }}" alt="">
+                                    </picture>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-x-30 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Список работ</span>
+                    </div>
+                    <div class="col-span-9">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115">
+                            <ul class="list-disc pl-17 list-work">
+                                <li>Изучение и анализ дела;</li>
+                                <li>Составление документации;</li>
+                                <li>Составление запросов в банк клиента;</li>
+                                <li>Опрос свидетелей;</li>
+                                <li>Защита клиента в суде.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-x-30 mb-100">
+                    <div class="col-span-3">
+                        <span class="text-lg font-semibold">Отзыв клиента</span>
+                    </div>
+                    <div class="col-span-9 client-review">
+                        <div class="bg-mint ml-75 pl-35 pt-20 pb-35 pr-50 min-h-115 flex">
+                            <div class="w-4/6 pr-40 description">
+                                <p>
+                                    «Выражаю огромную благодарсность компании ООО «БухАссистент»!
+                                    Сотрудники компании настоящие специалисты, помогли решить мое дело в суде.
+                                    Смело рекомендую!»
+                                </p>
+
+                                <p>
+                                    <b>Елена К.,</b> генеральный директор
+                                </p>
+
+                            </div>
+                            <picture>
+                                <img class="w-full" src="{{ 'assets/img/png/letter.png'|theme }}" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% partial 'section/portfolio/team-project' %}
+{% partial 'section/consultation' %}
+{% partial 'section/portfolio/other-cases' %}
+

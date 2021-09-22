@@ -1,0 +1,28 @@
+{% set partners = [
+    'assets/img/svg/partner-1.svg'|theme,
+    'assets/img/svg/partner-2.svg'|theme,
+    'assets/img/svg/partner-3.svg'|theme,
+    'assets/img/svg/partner-4.svg'|theme,
+    'assets/img/svg/partner-5.svg'|theme,
+    'assets/img/svg/partner-6.svg'|theme,
+    'assets/img/svg/partner-7.svg'|theme,
+    'assets/img/svg/partner-8.svg'|theme,
+    'assets/img/svg/partner-9.svg'|theme,
+    'assets/img/svg/partner-10.svg'|theme,
+    'assets/img/svg/partner-11.svg'|theme,
+    'assets/img/svg/partner-12.svg'|theme
+] %}
+
+<section class="pb-105" id="partners">
+    <div class="container">
+        <div class="grid grid-cols-4 gap-x-30 gap-y-100">
+            {% for item in partners %}
+            <div class="flex-1 flex items-center">
+                <picture>
+                    <img src="{{ item }}" alt="">
+                </picture>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

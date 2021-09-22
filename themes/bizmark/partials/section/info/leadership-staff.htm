@@ -1,0 +1,14 @@
+<section class="pb-90" id="leadership-staff">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Руководительский состав'
+        %}
+        <div class="flex flex-wrap justify-center -m-15">
+            {% for i in 1..2 %}
+                <div class="w-1/4 p-15">
+                    {% partial 'expert/card' %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<form class="px-65 pt-75 pb-65 flex flex-col text-center shadow border-1 border-darkWhite rounded-5 bg-whitez">
+    <span class="font-semibold text-3xl mb-40">Оставьте телефон</span>
+    <span class="text-lg mb-55">
+        Перезвоним в течение 15 минут
+        и расскажем как это сделать
+    </span>
+    {% partial 'element/input'
+        type = 'tel'
+        placeholder = 'Введите номер телефона'
+        name = 'phone'
+        required = 'true'
+        class = "mb-40"
+    %}
+    {% partial 'element/button'
+        type = "submit"
+        text = "Заказать звонок"
+        class = 'mb-30'
+    %}
+    <span class="text-sm">
+        Отправляя заявку, вы даете согласие <br>
+        на обработку своих персональных данных
+    </span>
+</form>

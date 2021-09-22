@@ -1,0 +1,20 @@
+<section class="pb-100" id="collective">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Коллектив'
+        %}
+        <div class="grid grid-cols-4 gap-30 mb-105">
+            {% for i in 1..8 %}
+            <div>
+                {% partial 'expert/card' %}
+            </div>
+            {% endfor %}
+        </div>
+        <div class="btn-wrap">
+            {% partial 'element/button'
+            href = '#'
+            text = 'Подробнее о коллективе'
+            %}
+        </div>
+    </div>
+</section>

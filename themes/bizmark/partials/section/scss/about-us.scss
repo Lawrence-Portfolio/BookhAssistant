@@ -1,0 +1,13 @@
+section#about-us {
+    .description {
+        p {
+           margin-bottom: 40px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    .default-button {
+        min-width: 295px;
+    }
+}

@@ -1,0 +1,10 @@
+title = "Вопросы и ответы"
+url = "/faq"
+layout = "info"
+==
+function onStart() {
+    $this->addCss(mix('css/faq.css', 'themes/bizmark/assets'));
+    $this->addJs(mix('js/faq.js', 'themes/bizmark/assets'));
+}
+==
+{% partial 'pages/info/faq' %}

@@ -1,0 +1,15 @@
+<div class="grid grid-cols-6 gap-20 video-gallery" video-gallery>
+    {% for i in 1..12 %}
+    <a
+        class="rounded-5 overflow-hidden cursor-pointer video-button"
+        data-lg-size="1280-720"
+        data-src="https://youtu.be/ncB_qYsscIE">
+        <picture>
+            <img class="object-cover video-preview" src="https://img.youtube.com/vi/ncB_qYsscIE/maxresdefault.jpg" alt="">
+        </picture>
+        <picture class="video-icon">
+            <img src="{{ 'assets/img/svg/icons/play.svg'|theme }}">
+        </picture>
+    </a>
+    {% endfor %}
+</div>

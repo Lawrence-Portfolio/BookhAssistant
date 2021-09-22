@@ -1,0 +1,15 @@
+<section class="pb-100" id="team-project">
+    <div class="container">
+        {% partial 'element/section_title'
+            text = 'Команда проекта'
+            tag = 'h2'
+        %}
+        <div class="grid grid-cols-2 gap-y-60 gap-x-30 ml-100 mr-30">
+            {% for i in 1..4 %}
+                <div>
+                    {% partial 'expert/card' invert = true %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

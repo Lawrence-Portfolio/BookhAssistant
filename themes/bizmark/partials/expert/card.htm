@@ -1,0 +1,24 @@
+
+{% if invert %}
+    <div class="flex items-end">
+        <div>
+            <picture class="block mr-30">
+                <img class="w-full object-cover" src="{{ 'assets/img/jpg/expert.jpg'|theme }}" alt="Борщевская Татьяна">
+            </picture>
+        </div>
+        <div class="w-11/12">
+            <span class="text-2xl font-semibold mb-5">Борщевская Татьяна</span>
+            <span class="text-lg">Главный бухгалтер</span>
+            <span>Стаж — 20 лет, более 60 кейсов</span>
+        </div>
+    </div>
+{% else %}
+    <div>
+        <picture class="block mb-25">
+            <img class="w-full object-cover" src="{{ 'assets/img/jpg/expert.jpg'|theme }}" alt="Борщевская Татьяна">
+        </picture>
+        <span class="text-2xl font-semibold mb-5">Борщевская Татьяна</span>
+        <span class="text-lg">Главный бухгалтер</span>
+        <span>Стаж — 20 лет, более 60 кейсов</span>
+    </div>
+{% endif %}

@@ -1,0 +1,70 @@
+{% set links = [
+    {
+        title: 'О компании',
+        href: '#'
+    },
+    {
+        title: 'История компании',
+        href: '#'
+    },
+    {
+        title: 'Отзывы',
+        href: '#'
+    },
+    {
+        title: 'Коллектив',
+        href: '#'
+    },
+    {
+        title: 'Лицензии',
+        href: '#'
+    },
+    {
+        title: 'Технологии',
+        href: '#'
+    },
+    {
+        title: 'Клиенты',
+        href: '#'
+    },
+    {
+        title: 'Партнеры',
+        href: '#'
+    },
+    {
+        title: 'Вопросы и ответы',
+        href: '#'
+    },
+    {
+        title: 'Реквизиты',
+        href: '#'
+    },
+    {
+        title: 'Вакансии',
+        href: '#'
+    },
+    {
+        title: 'Преимущетва',
+        href: '#'
+    },
+    {
+        title: 'Оплата услуг онлайн',
+        href: '#'
+    }
+] %}
+
+<nav class="info-pages-nav">
+    <ul class="flex flex-wrap -m-10">
+        {% for link in links %}
+        {% if link.title == this.page.title %}
+        <li class="p-10">
+            <a class="active" href="{{ link.href }}">{{ link.title }}</a>
+        </li>
+        {% else %}
+        <li class="p-10 ">
+            <a href="{{ link.href }}">{{ link.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
